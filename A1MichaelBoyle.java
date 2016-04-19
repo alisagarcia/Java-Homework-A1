@@ -43,7 +43,12 @@ public class A1MichaelBoyle {
          char[] eventTextNoHTMLCharArray = eventTextNoHTML.toCharArray();
         System.out.println("The length of the array eventTextNoHTMLCharArray is: " + eventTextNoHTMLCharArray.length);
         System.out.println("The second character in eventTextNoHTMLCharArray is: " + eventTextNoHTMLCharArray[1]);
-        //TODO: your logic here
+        
+         //Task 4: Using a for loop, examining one character at a time, count how many special characters (i.e. non-letter, non-digit) there are in eventTextNoHTMLCharArr.
+        int count = 0;
+        for (int i = 0; i < eventTextNoHTMLCharArray.length; i++) {
+            if (!(Character.isLetterOrDigit(eventTextNoHTMLCharArray[i]))) {
+                count++;
                         
     }
     
