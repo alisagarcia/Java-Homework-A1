@@ -38,6 +38,11 @@ public class A1MichaelBoyle {
         int endIndex = eventText.indexOf("</td>");
         String eventTextNoHTML = eventText.substring(beginIndex, endIndex);
         System.out.println("The value of eventTextNoHTML is: " + eventTextNoHTML);
+        
+        //Task 3 
+         char[] eventTextNoHTMLCharArray = eventTextNoHTML.toCharArray();
+        System.out.println("The length of the array eventTextNoHTMLCharArray is: " + eventTextNoHTMLCharArray.length);
+        System.out.println("The second character in eventTextNoHTMLCharArray is: " + eventTextNoHTMLCharArray[1]);
         //TODO: your logic here
                         
     }
