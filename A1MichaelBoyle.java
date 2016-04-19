@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-
+/*git version*/
 package a1michaelboyle;
 
 import java.net.URL;
@@ -33,7 +33,11 @@ public class A1MichaelBoyle {
 //        //get the 5th face-off in the game
 //        eventText = getNthEventByType(5, "FAC", "http://www.nhl.com/scores/htmlreports/20132014/PL020026.HTM");
 //        System.out.println(eventText);
-        
+        //Task 2
+        int beginIndex = (eventText.indexOf("\">") + 2);
+        int endIndex = eventText.indexOf("</td>");
+        String eventTextNoHTML = eventText.substring(beginIndex, endIndex);
+        System.out.println("The value of eventTextNoHTML is: " + eventTextNoHTML);
         //TODO: your logic here
                         
     }
